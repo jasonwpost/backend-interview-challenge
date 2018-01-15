@@ -1,5 +1,9 @@
 (ns shapes.core)
 
+;; PLEASE IGNORE THIS FILE
+;;
+;; It was just used to generate shapes.db and operations.data.
+
 (defn uuid [] (str (java.util.UUID/randomUUID)))
 (defn third [coll] (nth coll 2))
 (defn choose1 [n] (when (seq n) (rand-nth (seq n))))
