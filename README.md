@@ -8,7 +8,7 @@ Tl;dr - just perform the [operation](operations.data) against the [database](sha
 * We don’t care much about performance.
 * Tests are optional (but correction will probably be taken into consideration.)
 
-You need two files:
+You need two files (other files can be ignored.):
 * [shapes.db](shapes.db)
 * [operations.data](operations.data)
 
