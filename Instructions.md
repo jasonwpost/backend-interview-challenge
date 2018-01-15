@@ -28,17 +28,17 @@ There’s two columns, separated by a pipe “|” symbol.
 It’s the operations to be performed against the database.
 
 * The amount of columns are variable depending on the operation.
-  * The second column is the id
-    * For add and delete, this is the shape to modify.
-    * For create-shape, this should be the id of the new shape.
   * The first column is the operation to be performed
     * Operation: delete-shape (delete the shape)
     * Operation: create-shape
       * Create a new shape, it’s points are listed in the last column.
-  * Operation: add-point
-    * Append the point onto the list of points for that shape.
-  * Operation: delete-point
-    * The last column is the index of the point to delete (zero indexed.) So, if the last column is a 3, find the shape in the database, and delete the fourth point.
+    * Operation: add-point
+      * Append the point onto the list of points for that shape.
+    * Operation: delete-point
+      * The last column is the index of the point to delete (zero indexed.) So, if the last column is a 3, find the shape in the database, and delete the fourth point.
+  * The second column is the id
+    * For add and delete, this is the shape to modify.
+    * For create-shape, this should be the id of the new shape.
  * To make things easier, you can safely assume that there’s no more than one operation per shape (meaning: ids are distinct within operations.data)
 
 ### Your task
