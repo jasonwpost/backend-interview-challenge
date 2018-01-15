@@ -1,6 +1,6 @@
-[Panono](www.panono.com) - Backend programming challenge
+# Backend programming challenge
 
-In short: just perform the [operation](operations.data) against the [database](shapes.db), and save the result to a text file.
+Tl;dr - just perform the [operation](operations.data) against the [database](shapes.db), and save the result to a text file.
 
 ### General rules:
 * You can use any programming language you’d like.
@@ -42,9 +42,9 @@ It’s the operations to be performed against the database.
  * To make things easier, you can safely assume that there’s no more than one operation per shape (meaning: ids are distinct within operations.data)
 
 ### Your task
-1. Read in the ‘shapes.db’ file.
+1. Read in the database.
 2. Print (to the console) the counts of: triangles, squares, pentagons, hexagons, and heptagons (nothing pretty needed, just output something).
-  * Where a triangle has 3 points, square has 4 points, pemtagon has 5 points, hexagon - 6 points, heptagon - 7 points.
+    * Where a triangle has 3 points, square has 4 points, pemtagon has 5 points, hexagon - 6 points, heptagon - 7 points.
 3. Perform the operations against the data.
 4. Repeat step 2 – meaning reprint the count of each shape.
 5. Print the updated database to a file like “updated.db”.
