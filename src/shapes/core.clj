@@ -38,9 +38,9 @@
 
 (defn serialize-db [ids shapes]
   (doall
-    (map (fn [id shape] (str id "|" (serialize-shape shape)))
-         ids
-         shapes)))
+    (->> (sort-by first (zipmap ids shapes))
+         (into [])
+         (map (fn [[id shape]] (str id "|" (serialize-shape shape)))))))
 
 (defn write-to-file [filename data]
   (spit filename (clojure.string/join "\n" data)))
