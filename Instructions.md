@@ -9,8 +9,8 @@ Tl;dr - just perform the [operation](operations.data) against the [database](sha
 * Tests are optional (but correction will probably be taken into consideration.)
 
 You need two files:
-* shapes.db
-* operations.data
+* [shapes.db](shapes.db)
+* [operations.data](operations.data)
 
 ### [shapes.db](shapes.db)
 It’s the database, stored as a file.
