@@ -46,12 +46,11 @@
   (spit filename (clojure.string/join "\n" data)))
 
 (defn create-op [id shape]
-  (let [op (choose1 [:delete-shape :create-shape :delete-point :update-point :add-point])]
+  (let [op (choose1 [:delete-shape :create-shape :delete-point :add-point])]
     (case op
       :delete-shape [op id]
       :create-shape [op (uuid) (generate-shape (+ 3 (rand-int (count shapes))))]
       :delete-point [op id (rand-int (count shape))]
-      :update-point [op id (rand-int (count shape)) (choose1 ["+" "-"]) (generate-point)]
       :add-point [op id (generate-point)]
       nil)))
 
@@ -70,7 +69,6 @@
     :delete-shape (str (name op) "|" id)
     :create-shape (str (name op) "|" id "|" (serialize-shape (first data)))
     :delete-point (str (name op) "|" id "|" (first data))
-    :update-point (str (name op) "|" id "|" (first data) "|" (second data) "|" (serialize-point (third data)))
     :add-point (str (name op) "|" id "|" (serialize-point (first data)))
     (throw (ex-info "Operation not found!" {:op op}))))
 
