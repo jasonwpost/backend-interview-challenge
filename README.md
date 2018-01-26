@@ -43,8 +43,8 @@ It’s the operations to be performed against the database.
 
 ### Your task
 1. Read in the database.
-2. Print (to the console) the counts of: triangles, squares, pentagons, hexagons, and heptagons (nothing pretty needed, just output something).
-    * Where a triangle has 3 points, square has 4 points, pemtagon has 5 points, hexagon - 6 points, heptagon - 7 points.
+2. Print (to the console) the counts of each shape (triangles, squares, pentagons, etc.) (nothing pretty needed, but display their counts.)
+    * Where a triangle has 3 points, square has 4 points, pentagon has 5 points, [etc](http://www.worksheetfun.com/2013/10/19/shapes-10-worksheets/).
 3. Perform the operations against the data.
 4. Repeat step 2 – meaning reprint the count of each shape.
 5. Print the updated database to a file like “updated.db”.
